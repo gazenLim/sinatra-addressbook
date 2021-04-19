@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+</style>
+<title>Title of the document</title>
+</head>
+
+<body>
+<h1>Edit or Delete Your Address</h1>
+<% @address.each do |adress| %>
+ Name: <b><a href="/address/<%= adress.id %>/edit"><%= adress.name.titleize %></b></a><br>
+ Street Name: <%= adress.street_name %><br>
+ City: <%= adress.city %><br>
+ State: <%= adress.state %><br>
+ Contact: <%= adress.contact %><br>
+ Family: <%= adress.family %><br><br>
+<hr>
+<br> 
+<% end %>
+Total Address = <%= @address.count %>
+<br>
+
+
+
+
+
+</body>
+
+</html>

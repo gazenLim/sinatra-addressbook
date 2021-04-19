@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+a{
+    text-decoration:none
+}
+
+</style>
+<title>Title of the document</title>
+</head>
+
+<body>
+<h1>Address</h1>
+
+
+<b>Name:</b>           <%= @address.name.titleize %><br>
+<b>Street Name:- </b>   <%= @address.street_name  %><br>
+<b>City:</b>           <%= @address.city %><br>
+<b>State: </b>         <%= @address.state.upcase  %><br>
+<b>Zip Code: </b>      <%= @address.zip_code  %><br>
+<b>Contact: </b>       <%= @address.contact  %><br>
+<b>Family:</b>         <%= @address.family %><br>
+
+<br>
+
+
+<button class="button button1"><a href="/address/new">Add New</a></button>
+</form>
+
+
+</body>
+
+</html>
